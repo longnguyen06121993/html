@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ký tự đặc biệt, chèn hình ảnh, tạo danh sách và liên kết</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .cha {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .anh{
+            background-image: url("1.png");
+            background-size: 100%;
+            height: 100vh;
+        }
+        .trai {
+            width: 40%;
+            background-image: url(1.png);
+            background-size: 250px 300px;
+            background-position: top right;
+            background-repeat: no-repeat;
+            min-height: 250px;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .phai {width: 60%}
+        .noidung {
+            padding-left: 30px;
+        }
+        .list {
+            margin-left: 15px;
+        }
+        .gachngang {
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            margin-bottom: 10px;
+        }
+        .chantrang {
+            margin-top: 30px;
+            padding-left: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome Page</h1>
+    <div class="cha">
+        <div class="trai"></div>
+        <div class="phai">
+            <ol class="noidung">
+                <li class="gachngang">
+                    <h3>Tieu De</h3>
+                    <ul class="list">
+                        <li>Thanh lap ngay 20/05/2007</li>
+                        <li>Thanh lap ngay 20/05/2007</li>
+                        <li>Thanh lap ngay 20/05/2007</li>
+                        <li>Thanh lap ngay 20/05/2007</li>
+                        <li>Thanh lap ngay 20/05/2007</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Lien He</h3>
+                    <ul class="list">
+                        <li>So dien thoai</li>
+                        <li>So dien thoai</li>
+                        <li>So dien thoai</li>
+                        <li>So dien thoai</li>
+                    </ul>
+                </li>
+            </ol>
+            <div class="chantrang">
+                San pham nay thuoc ve <a target="__blank" href="http://tungvinh.pe.hu/hoanglong">Hoang Long</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
